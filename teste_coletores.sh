@@ -1,5 +1,22 @@
 #!/bin/bash
+
+############################################
+#
+# teste_coletores.sh - Script para verificar coletores
+#
+# Autor: Erick Oliveira (erickoliveira.sp@gmail.com)
+#
+# Data Criação: 22/03/2022
+#
+# Descrição: Script para verificar se os coletores estão conectados nos roteadores;
+#
+# Exemplo de uso: ./teste_coletores.sh
+#
+#############################################
+
 clear
+
+#DECLARAÇÃO DE VARIAVEIS
 
 #ROTEADORES MATRIZ
 
@@ -27,14 +44,16 @@ CDPV010="1010"
 CDPV011="1011"
 CDPV012="1012"
 
-#-------------------------------------------------------
+#============================================
+
 #MENU
 
 menu()
 {
 clear	
-echo "-----------------------------------------------------------"
-echo "CHECAGEM DOS COLETORES"
+echo "==============================================="
+echo "           CHECAGEM DOS COLETORES              "
+echo "==============================================="
 echo ""
 echo "1) COLETORES MATRIZ"
 echo "2) COLETORES REGIS"
@@ -68,8 +87,9 @@ esac
 matriz ()
 {
 	clear
-	echo "-------------------------------------------------------"
-	echo -e '\033[1;32mCOLETORES DA MATRIZ\033[00;37m'
+	echo "==============================================="
+	echo -e '      \033[1;32mCOLETORES DA MATRIZ\033[00;37m'
+	echo "==============================================="
 	echo ""
 	echo "1) FORMAGEM 1  CDPV005"
 	echo "2) FORMAGEM 2  CDPV007"
